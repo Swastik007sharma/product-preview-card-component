@@ -42,6 +42,9 @@ Neutral
 }
 
 .product-image{
+    background-image: url('images/image-product-desktop.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
     width: 50%;
     height: 100%;
     border-radius: 10px 0 0 10px;
@@ -114,6 +117,37 @@ button span{
     padding-left: 10px;
 }
 
-@media (max-width:375px) {
-    
+@media (max-width:400px) {
+    .html{
+        font-size: 12px;
+    }
+
+    .product{
+        
+        flex-direction: column;
+        width: 90vw;
+        height: 92vh;
+    }
+
+    .product-image{
+        background-image: url('images/image-product-mobile.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .product-info{
+        height: 60vh;
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .product-description{
+        line-height: 1.5rem;
+    }
+
+    .original-price{
+        font-weight: 700;
+    }
 }
