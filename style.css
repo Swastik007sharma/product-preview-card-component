@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+/* Primary
+
+- Dark cyan: hsl(158, 36%, 37%)
+- Cream: hsl(30, 38%, 92%)
+
+Neutral
+
+- Very dark blue: hsl(212, 21%, 14%)
+- Dark grayish blue: hsl(228, 12%, 48%)
+- White: hsl(0, 0%, 100%) */
+
+.product{
+    display: flex;
+    flex-direction: row;
+    width: 42vw;
+    height: calc(20vw + 165px);
+    left: 0;
+    right: 0;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    border-radius: 10px;
+    transform: translateY(-50%);
+}
+
+.product-image{
+    width: 50%;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.product-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5%;
+    height: 100%;
+    width: 50%;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 10px 10px 0;
+}
+.product-type{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 3px;
+    font-size: 1rem;
+}
+.product-title{
+    font-family: 'Fraunces', serif;
+    line-height: 2.3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+.product-description{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8rem;
+}
+.product-price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    opacity: 0.8;
+    font-weight: 700;
+}
+.original-price{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    justify-self: center;
+}
+
+.current-price{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2.4rem;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%); 
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+button span{
+    padding-left: 10px;
+}
+
+@media (max-width:375px) {
+    
+}
