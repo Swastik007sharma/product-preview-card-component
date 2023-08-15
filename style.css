@@ -41,11 +41,8 @@ Neutral
     transform: translateY(-50%);
 }
 
-.product-image{
-    background-image: url('images/image-product-desktop.jpg');
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 50%;
+.product-image>picture>img{
+    width: 100%;
     height: 100%;
     border-radius: 10px 0 0 10px;
 }

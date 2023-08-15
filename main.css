@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+p{
+    color: hsl(228, 12%, 48%);
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.product{
+    width: 88vw;
+    height: 100vh;
+    margin: 0 auto;
+}   
+
+.product-image img{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 0.65rem 0.65rem 0 0;
+    margin-top: 2rem;
+}
+
+.product-info{
+    padding: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 0 0 0.65rem 0.65rem;
+}
+
+.product-type{
+    letter-spacing: 3px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.product-heading{
+    font-family: 'Fraunces', serif;
+    line-height: 2.3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 0.8rem 0;
+}
+.product-title{
+    line-height: 1.5rem;
+    padding-bottom: 0.6rem;
+}
+.product-price{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0.8rem 0;
+}
+
+.product-price>span{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-right: 1rem;
+}
+
+button{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%); 
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+button:hover{
+    opacity: 1;
+}
+
+button span{
+    padding-left: 10px;
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+@media (min-width:400px) {
+    html,body{
+        font-size: 12.5px;
+    }
+
+    .product{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top:50%;
+        transform: translateY(-50%);
+        display: flex;
+        width: 45rem;
+        height: 62vh;    
+    }
+
+    .product-image img{
+        width:100%;
+        max-height: 66.8vh; 
+        min-width: 200px;
+        border-radius: 0.65rem  0 0 0.65rem;
+        margin: 0;
+    }
+
+    .product-info{
+        padding: 4%;
+        width: 50%;
+        min-width: 200px;
+        border-radius: 0 0.65rem 0.65rem 0;
+    }
+
+    .product-heading{
+        line-height: 2.5rem;
+        font-size: 2.5rem;
+        padding: 1.2rem 0 1.2rem 0;
+    }
+
+    .product-title{
+        line-height: 1.8rem;
+        font-size: 1.1rem;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+}
